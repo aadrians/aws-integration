@@ -35,4 +35,10 @@ public class AppTest
     {
         assertTrue( true );
     }
+    
+    public void testDebitWithSufficientFund(){
+    	BankAccount bankAccount = new BankAccount(10);
+    	double amount = bankAccount.debit(5);
+    	assertEquals(amount, 5.0, 0.0);
+    }
 }
